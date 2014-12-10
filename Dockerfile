@@ -18,4 +18,15 @@ RUN mkdir -p /vol/dionaea/bistreams
 
 RUN chown -R nobody:nogroup /vol/dionaea
 
+EXPOSE 21
+EXPOSE 42
+EXPOSE 80
+EXPOSE 135
+EXPOSE 443
+EXPOSE 445
+EXPOSE 1433
+EXPOSE 3306
+EXPOSE 5060
+EXPOSE 5061
+
 CMD dionaea -c /etc/dionaea/dionaea.conf -w /vol/dionaea -u nobody -g nogroup
