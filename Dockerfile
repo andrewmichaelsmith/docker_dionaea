@@ -13,6 +13,18 @@ RUN apt-get install -y dionaea-phibo
 ADD conf/dionaea.conf /etc/dionaea/dionaea.conf
 ADD bin/launch.sh /usr/bin/launch.sh
 
-EXPOSE 21 42 80 135 443 445 1433 3306 5060 5061
+EXPOSE 21  
+EXPOSE 42  
+EXPOSE 80  
+EXPOSE 135 
+EXPOSE 443 
+EXPOSE 445 
+EXPOSE 1433
+EXPOSE 3306
+EXPOSE 5060
+EXPOSE 5061
+
+EXPOSE 69/udp
+EXPOSE 5060/udp
 
 CMD launch.sh
